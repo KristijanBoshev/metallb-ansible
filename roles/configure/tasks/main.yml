@@ -20,6 +20,10 @@
       src: "l2_advertisement.yaml.j2"
       dest: "{{ config_apply_dir.path }}/l2_advertisement.yaml"
 
+  - name: Wait for MetalLB webhook to be ready
+    pause:
+      seconds: 15    
+
   - name: Apply ip-address-pool.yaml
     command: kubectl apply -f {{ config_apply_dir.path }}/ip-address-pool.yaml
 
