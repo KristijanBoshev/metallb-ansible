@@ -13,7 +13,7 @@ This repo contains an Ansible Playbook able to deploy MetalLB to a cluster using
 1. Clone and enter the github repo.
 
 ```bash
-git clone https://github.com/Chris-Greaves/metallb-ansible
+git clone https://github.com/KristijanBoshev/metallb-ansible
 cd metallb-ansible
 ```
 
